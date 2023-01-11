@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+body {
+  background-image: url('https://positiveroutines.com/wp-content/uploads/2018/12/stack-of-books-against-blue-background.jpg');
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FFFFFF;
+}
+div.d {
+  line-height: 200%;
+}
+</style>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add a Book</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="C:\Users\Sravya\Desktop\AdminPage\addProductCss.css">
+
+</head>
+<body>
+
+ <div class="container">
+<a style="color:blue;"href="file:///C:/Users/Sravya/Desktop/AdminPage/Admin.html" type="submit"class="btn1"> &#60;-- Back </a>
+   <div class="admin-product-form-container">
+
+      <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
+		 <div class="d">
+		<br><br><br>
+           <h1 style="color:black;"><center>Add a new Book</center></h1>
+		 <center><input type="text" placeholder="Enter Book id" name="book_id" class="box" style="width: 15%;height: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+		 <input type="text" placeholder="Enter Book Category" name="book_category" class="box" style="width: 15%;height: 20px;">
+		 <br>
+		 <input type="text" placeholder="Enter Book Title" name="book_title" class="box" style="width: 15%;height: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		 
+		 <input type="text" placeholder="Enter Book Author " name="book_author" class="box" style="width: 15%;height: 20px;">
+		 <br>
+         	 <input type="text" placeholder="Enter Book Price" name="book_price" class="box" style="width: 15%;height: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		 
+		 <input type="text" placeholder="Enter Book discription" name="Book_disc" class="box" style="width: 15%;height: 20px;">
+         	 <br>
+		 <input type="file" accept="image/png, image/jpeg, image/jpg" name="product_image" class="box" style="width: 15%;height: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 <br>
+		 <a href="file:///C:/Users/Sravya\De/Desktop/Admin.html" type="submit"class="btn"> Add Book </a>
+      </form>
+
+   </div>
+   		  
+</div>
+
+
+</body>
+</html>
